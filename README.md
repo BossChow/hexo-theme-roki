@@ -1,2 +1,4 @@
 # hexo-theme-roki
-Theme named Roki for Hexo
+Roki Theme for Hexo
+
+
