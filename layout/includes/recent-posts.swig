@@ -10,7 +10,11 @@
 
       <div class="cd-timeline-content">
         <h2>{{ postItem.title }}</h2>
-        <p>{{ postItem.description}}</p>
+		{% if postItem.excerpt %}
+        <p>{{ postItem.excerpt }}</p>
+		{% else %}
+		<p>无摘要</p>
+		{% endif %}
         <a class="cd-read-more"  href="{{ config.root }}{{ postItem.path }}">阅读全文</a>
         {% if postItem.date %}
           <span class="cd-date">{{ date(postItem.date) }}</span>
